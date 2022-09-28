@@ -13,7 +13,7 @@ app.use(cors());
 const tourRoute = require("./routes/tour.routes.js");
 
 app.get("/", (req, res) => {
-  res.render("Tour management Home Page!!!");
+  res.send("Tour management Home Page!!!");
 });
 
 app.use("/api/v1/tour", tourRoute);
